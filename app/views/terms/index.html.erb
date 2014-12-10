@@ -1,0 +1,15 @@
+<h1>Listing terms</h1>
+
+<table>
+	<tr>
+		<th>English</th>
+		<th>American</th>
+	</tr>
+
+	<% @terms.each do |term| %>
+	<tr>
+		<td><%= term.english %></td>
+		<td><%= term.american %></td>
+	</tr>
+	<% end %>
+</table>
