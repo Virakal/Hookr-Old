@@ -1,15 +1,23 @@
 <h1>Listing terms</h1>
 
+<%= link_to 'New Term', new_term_path %>
+
 <table>
 	<tr>
 		<th>English</th>
 		<th>American</th>
+		<th colspan="2"></th>
 	</tr>
 
 	<% @terms.each do |term| %>
 	<tr>
 		<td><%= term.english %></td>
 		<td><%= term.american %></td>
+		<td><%= link_to 'Show', term_path(term) %></td>
+		<td><%= link_to 'Edit', edit_term_path(term) %></td>
+		<td><%= link_to 'Delete', term_path(term), method: :delete, data: {
+			confirm: 'Are you sure?'
+		} %></td>
 	</tr>
 	<% end %>
 </table>
