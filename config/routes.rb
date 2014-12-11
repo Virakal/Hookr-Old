@@ -9,6 +9,8 @@ Rails.application.routes.draw do
 
   resources :terms
 
+  post 'translate' => 'welcome#translate'
+
   # Example of regular route:
   #   get 'products/:id' => 'catalog#view'
 

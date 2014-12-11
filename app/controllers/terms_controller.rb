@@ -1,4 +1,7 @@
 class TermsController < ApplicationController
+  http_basic_authenticate_with name: "admin",
+    password: Rails.application.secrets.terms_password
+
   def new
     @term = Term.new
   end

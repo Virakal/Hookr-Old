@@ -1,1 +1,7 @@
-...
+<h1>Hookr <small>(beta)</small></h1>
+
+<%= form_tag "/translate", method: :post do %>
+	<%= label_tag :eng, "British English" %>
+	<%= text_area_tag :eng %>
+	<%= submit_tag "Translate" %>
+<% end %>
