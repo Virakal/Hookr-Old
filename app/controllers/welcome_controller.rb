@@ -24,11 +24,15 @@ class WelcomeController < ApplicationController
       translated.gsub! Regexp.new(from_term, Regexp::IGNORECASE), to_term
     end
 
-    render json: {
-      :from => from,
-      :to => to,
-      :source => source,
-      :translated => translated,
-    }
+    if request.xhr?
+      render json: {
+        :from => from,
+        :to => to,
+        :source => source,
+        :translated => translated,
+      }
+    else
+      render plain: translated
+    end
   end
 end
