@@ -1,7 +1,17 @@
 <h1>Hookr <small>(beta)</small></h1>
 
 <%= form_tag "/translate", method: :post do %>
-	<%= label_tag :eng, "British English" %>
-	<%= text_area_tag :eng %>
+	<p>
+		From:
+		<%= select_tag(:from, options_for_select(['British', 'American'], 'English')) %>
+	</p>
+
+	<p>
+		To:
+		<%= select_tag(:to, options_for_select(['British', 'American'], 'American')) %>
+	</p>
+
+	<%= label_tag :source, "Source" %>
+	<%= text_area_tag :source %>
 	<%= submit_tag "Translate" %>
 <% end %>
