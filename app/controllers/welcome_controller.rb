@@ -7,6 +7,7 @@ class WelcomeController < ApplicationController
     translated = source.clone
     from = params[:from]
     to = params[:to]
+    sentinel = "⁐~⁐" # To prevent replacing a term's replacement
 
     case from
     when 'British' then from_property = :english
@@ -21,8 +22,15 @@ class WelcomeController < ApplicationController
     Term.all.each do |term|
       from_term = term.send from_property
       to_term = term.send to_property
-      translated.gsub! Regexp.new(from_term, Regexp::IGNORECASE), to_term
+
+      from_term = "([[:blank:][:punct:]]|^)#{from_term}([[:blank:][:punct:]]|$)"
+      to_term = "#{sentinel}#{to_term}#{sentinel}"
+
+      translated.gsub! Regexp.new(from_term, Regexp::IGNORECASE), "\\1#{to_term}\\2"
     end
+
+    # Remove the sentinel
+    translated.gsub! Regexp.new("#{sentinel}(.+?)#{sentinel}"), '\1'
 
     if request.xhr?
       render json: {
