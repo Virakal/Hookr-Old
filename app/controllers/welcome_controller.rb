@@ -24,7 +24,7 @@ class WelcomeController < ApplicationController
       to_term = term.send to_property
 
       from_term = "([[:blank:][:punct:]]|^)#{from_term}([[:blank:][:punct:]]|$)"
-      to_term = "#{sentinel}#{to_term}#{sentinel}"
+      to_term = "#{to_term}".split('').join(sentinel)
 
       translated.gsub! Regexp.new(from_term, Regexp::IGNORECASE), "\\1#{to_term}\\2"
     end
