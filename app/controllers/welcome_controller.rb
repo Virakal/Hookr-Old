@@ -30,7 +30,7 @@ class WelcomeController < ApplicationController
     end
 
     # Remove the sentinel
-    translated.gsub! Regexp.new("#{sentinel}(.+?)#{sentinel}"), '\1'
+    translated.gsub! Regexp.new(sentinel), ''
 
     if request.xhr?
       render json: {
