@@ -1,3 +1,9 @@
+GIT
+  remote: git://github.com/bootstrap-ruby/rails-bootstrap-forms.git
+  revision: 8e1fc7dd1cab1f6d664d7ebce8c498fd39c533f9
+  specs:
+    bootstrap_form (2.2.0)
+
 GEM
   remote: https://rubygems.org/
   specs:
@@ -52,7 +58,7 @@ GEM
     mail (2.6.3)
       mime-types (>= 1.16, < 3)
     mime-types (2.4.3)
-    minitest (5.4.3)
+    minitest (5.5.0)
     multi_json (1.10.1)
     pg (0.17.1-x64-mingw32)
     rack (1.5.2)
@@ -113,6 +119,7 @@ PLATFORMS
 
 DEPENDENCIES
   bootstrap-sass (~> 3.3.1.0)
+  bootstrap_form!
   coffee-rails (~> 4.0.0)
   jbuilder (~> 2.0)
   jquery-rails

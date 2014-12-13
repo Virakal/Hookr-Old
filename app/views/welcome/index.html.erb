@@ -1,15 +1,7 @@
-<%= form_tag "/translate", method: :post do %>
-	<p>
-		From:
-		<%= select_tag(:from, options_for_select(['British', 'American'], 'English')) %>
-	</p>
+<%= bootstrap_form_tag url: '/translate', method: :post do |f| %>
+	<%= f.select :from, ['British', 'American'], {label: 'From', selected: 'English'} %>
+	<%= f.select :to, ['British', 'American'], {label: 'To', selected: 'American'} %>
 
-	<p>
-		To:
-		<%= select_tag(:to, options_for_select(['British', 'American'], 'American')) %>
-	</p>
-
-	<%= label_tag :source, "Source" %>
-	<%= text_area_tag :source %>
-	<%= submit_tag "Translate" %>
+	<%= f.text_area :source, label: "Source" %>
+	<%= f.submit "Translate", class: 'btn btn-primary' %>
 <% end %>
