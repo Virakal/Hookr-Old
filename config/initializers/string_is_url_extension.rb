@@ -1,4 +1,4 @@
-require "addressable/uri"
+require 'addressable/uri'
 
 class String
   def is_url?

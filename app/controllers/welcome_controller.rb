@@ -1,4 +1,5 @@
 require 'open-uri'
+require 'addressable/uri'
 
 class WelcomeController < ApplicationController
   def index
@@ -9,14 +10,23 @@ class WelcomeController < ApplicationController
     type = :plain
 
     if source.is_url?
-      source = open(source) {|f| f.read }
-      type = :url
+      parsed = Addressable::URI.parse(source)
+      is_pdf = parsed.path.match /\.pdf$/i
+      io = open source, 'rb'
+      source = io.read
+
+      if is_pdf
+        reader = PDF::Reader.new io
+        source = reader.pages.map(&:text).join("\n")
+      else
+        type = :url
+      end
     end
 
     translated = source.clone
     from = params[:from]
     to = params[:to]
-    sentinel = "⁐~⁐" # To prevent replacing a term's replacement
+    sentinel = '⁐~⁐' # To prevent replacing a term's replacement
 
     case from
     when 'British' then from_property = :english
@@ -49,7 +59,7 @@ class WelcomeController < ApplicationController
         :translated => translated,
       }
     elsif type === :plain
-      render plain: translated
+      render html: '<pre>'.html_safe + translated
     elsif type === :url
       render html: translated.html_safe
     end

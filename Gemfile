@@ -1,6 +1,5 @@
 source 'https://rubygems.org'
 
-
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
 gem 'rails', '4.1.8'
 
@@ -45,3 +44,4 @@ gem 'bootstrap_form', github: 'bootstrap-ruby/rails-bootstrap-forms'
 gem 'tzinfo-data', platforms: [:mingw, :mswin, :x64_mingw]
 
 gem 'addressable'
+gem 'pdf-reader'
