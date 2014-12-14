@@ -1,9 +1,18 @@
+require 'open-uri'
+
 class WelcomeController < ApplicationController
   def index
   end
 
   def translate
     source = params[:source]
+    type = :plain
+
+    if source.is_url?
+      source = open(source) {|f| f.read }
+      type = :url
+    end
+
     translated = source.clone
     from = params[:from]
     to = params[:to]
@@ -39,8 +48,10 @@ class WelcomeController < ApplicationController
         :source => source,
         :translated => translated,
       }
-    else
+    elsif type === :plain
       render plain: translated
+    elsif type === :url
+      render html: translated.html_safe
     end
   end
 end
