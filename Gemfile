@@ -7,7 +7,7 @@ gem 'rails', '~> 4.2.0'
 
 # Use postgres as the database for Active Record
 gem 'pg', group: [:production]
-gem 'sqlite3', git: "https://github.com/larskanis/sqlite3-ruby", branch: "add-gemspec", group: [:development, :test]
+gem 'sqlite3', git: 'https://github.com/larskanis/sqlite3-ruby', branch: 'add-gemspec', group: [:development, :test]
 
 # Use SCSS for stylesheets
 gem 'sass-rails', '~> 4.0.3'
