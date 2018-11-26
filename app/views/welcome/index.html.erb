@@ -1,6 +1,8 @@
 <%= bootstrap_form_tag url: '/translate', method: :post do |f| %>
-	<%= f.select :from, ['British', 'American'], {label: 'From', selected: 'English'} %>
-	<%= f.select :to, ['British', 'American'], {label: 'To', selected: 'American'} %>
+	<div class="form-inline">
+		<%= f.select :from, ['British', 'American'], {label: 'From', selected: 'English', label_col: 'col-sm-1', control_col: 'col-sm-5 inline-block'} %>
+		<%= f.select :to, ['British', 'American'], {label: 'To', selected: 'American', label_col: 'col-sm-1', control_col: 'col-sm-5 inline-block'} %>
+	</div>
 
 	<%= f.text_area :source, label: "Source" %>
 	<%= f.submit "Translate", class: 'btn btn-primary' %>

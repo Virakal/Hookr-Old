@@ -13,7 +13,7 @@
 
 ActiveRecord::Schema.define(version: 20141210214829) do
 
-  create_table "terms", force: true do |t|
+  create_table "terms", force: :cascade do |t|
     t.string   "english"
     t.string   "american"
     t.datetime "created_at"
