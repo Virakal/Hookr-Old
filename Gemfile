@@ -5,10 +5,6 @@ ruby '2.5.3'
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
 gem 'rails', '4.2.10'
 
-# Use postgres as the database for Active Record
-gem 'pg', '1.1.3', group: [:production]
-gem 'sqlite3', '~> 1.3.13', git: 'https://github.com/larskanis/sqlite3-ruby', branch: 'add-gemspec', group: [:development, :test]
-
 # Use SCSS for stylesheets
 gem 'sass-rails', '4.0.5'
 # Use Uglifier as compressor for JavaScript assets
@@ -24,8 +20,6 @@ gem 'jquery-rails'
 gem 'turbolinks'
 # Build JSON APIs with ease. Read more: https://github.com/rails/jbuilder
 gem 'jbuilder', '2.8.0'
-# bundle exec rake doc:rails generates the API under doc/api.
-gem 'sdoc', '0.4.2', group: :doc
 
 gem 'bootstrap-sass', '3.3.1.0'
 gem 'bootstrap_form', '2.7.0', github: 'bootstrap-ruby/rails-bootstrap-forms', tag: 'v2.7.0'
@@ -48,3 +42,16 @@ gem 'tzinfo-data', platforms: [:mingw, :mswin, :x64_mingw]
 gem 'addressable', '2.5.2'
 gem 'pdf-reader', '2.1.0'
 gem 'nokogiri', '1.8.5'
+
+group :production do
+	# Use postgres as the database for Active Record
+	gem 'pg', '1.1.3'
+end
+
+# bundle exec rake doc:rails generates the API under doc/api.
+group :doc do
+	gem 'sdoc', '0.4.2'
+end
+group :development, :test do
+	gem 'sqlite3', '~> 1.3.13', git: 'https://github.com/larskanis/sqlite3-ruby', branch: 'add-gemspec'
+end
