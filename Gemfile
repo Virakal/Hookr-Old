@@ -45,7 +45,7 @@ gem 'nokogiri', '1.8.5'
 
 group :production do
 	# Use postgres as the database for Active Record
-	gem 'pg', '1.1.3'
+	gem 'pg', '0.21.0'
 end
 
 # bundle exec rake doc:rails generates the API under doc/api.
