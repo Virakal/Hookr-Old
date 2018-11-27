@@ -6,8 +6,8 @@ ruby '2.5.3'
 gem 'rails', '4.2.10'
 
 # Use postgres as the database for Active Record
-gem 'pg', group: [:production]
-gem 'sqlite3', git: 'https://github.com/larskanis/sqlite3-ruby', branch: 'add-gemspec', group: [:development, :test]
+gem 'pg', '1.1.3', group: [:production]
+gem 'sqlite3', '~> 1.3.13', git: 'https://github.com/larskanis/sqlite3-ruby', branch: 'add-gemspec', group: [:development, :test]
 
 # Use SCSS for stylesheets
 gem 'sass-rails', '4.0.5'
@@ -45,6 +45,6 @@ gem 'bootstrap_form', '2.7.0', github: 'bootstrap-ruby/rails-bootstrap-forms', t
 # Windows does not include zoneinfo files, so bundle the tzinfo-data gem
 gem 'tzinfo-data', platforms: [:mingw, :mswin, :x64_mingw]
 
-gem 'addressable'
-gem 'pdf-reader'
-gem 'nokogiri'
+gem 'addressable', '2.5.2'
+gem 'pdf-reader', '2.1.0'
+gem 'nokogiri', '1.8.5'
