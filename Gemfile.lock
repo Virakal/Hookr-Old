@@ -209,7 +209,7 @@ DEPENDENCIES
   turbolinks (= 5.2.0)
   tzinfo-data
   uglifier (= 4.1.20)
-  webpacker
+  webpacker (= 3.5.5)
 
 RUBY VERSION
    ruby 2.5.3p105
