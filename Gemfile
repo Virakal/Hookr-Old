@@ -15,9 +15,9 @@ gem 'coffee-rails', '4.0.1'
 # gem 'therubyracer',  platforms: :ruby
 
 # Use jquery as the JavaScript library
-gem 'jquery-rails'
+gem 'jquery-rails', '4.3.3'
 # Turbolinks makes following links in your web application faster. Read more: https://github.com/rails/turbolinks
-gem 'turbolinks'
+gem 'turbolinks', '5.2.0'
 # Build JSON APIs with ease. Read more: https://github.com/rails/jbuilder
 gem 'jbuilder', '2.8.0'
 
@@ -52,6 +52,7 @@ end
 group :doc do
 	gem 'sdoc', '0.4.2'
 end
+
 group :development, :test do
 	gem 'sqlite3', '~> 1.3.13', git: 'https://github.com/larskanis/sqlite3-ruby', branch: 'add-gemspec'
 end
