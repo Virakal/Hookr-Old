@@ -1,5 +1,5 @@
 GIT
-  remote: git://github.com/bootstrap-ruby/rails-bootstrap-forms.git
+  remote: https://github.com/bootstrap-ruby/rails-bootstrap-forms
   revision: 1a2da3e770bc801c214990277b8f3ae7e79ede0a
   tag: v2.7.0
   specs:

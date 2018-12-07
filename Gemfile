@@ -22,7 +22,7 @@ gem 'turbolinks'
 gem 'jbuilder', '2.8.0'
 
 gem 'bootstrap-sass', '3.3.1.0'
-gem 'bootstrap_form', '2.7.0', github: 'bootstrap-ruby/rails-bootstrap-forms', tag: 'v2.7.0'
+gem 'bootstrap_form', '2.7.0', git: 'https://github.com/bootstrap-ruby/rails-bootstrap-forms', tag: 'v2.7.0'
 
 # Use ActiveModel has_secure_password
 # gem 'bcrypt', '~> 3.1.7'
