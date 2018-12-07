@@ -42,3 +42,7 @@ pickle-email-*.html
 /vendor/assets/bower_components
 *.bowerrc
 bower.json
+
+# Yarn
+/yarn-error.log
+node_modules

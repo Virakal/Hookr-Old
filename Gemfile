@@ -3,19 +3,20 @@ source 'https://rubygems.org'
 ruby '2.5.3'
 
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
-gem 'rails', '4.2.10'
+gem 'rails', '5.2.2'
+
+# Rails seems to want this?
+gem 'bootsnap', '1.3.2'
 
 # Use SCSS for stylesheets
-gem 'sass-rails', '4.0.5'
+gem 'sass-rails', '5.0.7'
 # Use Uglifier as compressor for JavaScript assets
 gem 'uglifier', '4.1.20'
 # Use CoffeeScript for .js.coffee assets and views
-gem 'coffee-rails', '4.0.1'
+gem 'coffee-rails', '4.2.2'
 # See https://github.com/sstephenson/execjs#readme for more supported runtimes
 # gem 'therubyracer',  platforms: :ruby
 
-# Use jquery as the JavaScript library
-gem 'jquery-rails', '4.3.3'
 # Turbolinks makes following links in your web application faster. Read more: https://github.com/rails/turbolinks
 gem 'turbolinks', '5.2.0'
 # Build JSON APIs with ease. Read more: https://github.com/rails/jbuilder
@@ -45,7 +46,7 @@ gem 'nokogiri', '1.8.5'
 
 group :production do
 	# Use postgres as the database for Active Record
-	gem 'pg', '0.21.0'
+	gem 'pg'
 end
 
 # bundle exec rake doc:rails generates the API under doc/api.
