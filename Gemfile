@@ -47,6 +47,7 @@ gem 'nokogiri', '1.8.5'
 group :production do
 	# Use postgres as the database for Active Record
 	gem 'pg'
+	gem 'webpacker'
 end
 
 # bundle exec rake doc:rails generates the API under doc/api.
