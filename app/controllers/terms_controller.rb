@@ -33,7 +33,7 @@ class TermsController < ApplicationController
 
     if @term.update(term_params)
       redirect_to @term
-    else 
+    else
       render 'edit'
     end
   end
