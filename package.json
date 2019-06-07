@@ -1,7 +1,7 @@
 {
   "private": true,
   "dependencies": {
-    "@rails/webpacker": "3.6.0",
+    "@rails/webpacker": "4.0.7",
     "jquery": "^3.4.1",
     "jquery-ujs": "^1.2.2"
   },
