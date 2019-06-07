@@ -3,19 +3,19 @@ source 'https://rubygems.org'
 ruby '2.5.3'
 
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
-gem 'rails', '5.2.2.1'
+gem 'rails', '5.2.3'
 
 # Rails seems to want this?
 gem 'bootsnap', '1.3.2'
 
 # Use SCSS for stylesheets
-gem 'sass-rails', '5.0.7'
+gem 'sassc-rails', '2.1.1'
 
 # Use Uglifier as compressor for JavaScript assets
 gem 'uglifier', '4.1.20'
 
 # Use CoffeeScript for .js.coffee assets and views
-gem 'coffee-rails', '4.2.2'
+gem 'coffee-rails', '5.0.0'
 
 # See https://github.com/sstephenson/execjs#readme for more supported runtimes
 # gem 'therubyracer',  platforms: :ruby
@@ -24,10 +24,10 @@ gem 'coffee-rails', '4.2.2'
 gem 'turbolinks', '5.2.0'
 
 # Build JSON APIs with ease. Read more: https://github.com/rails/jbuilder
-gem 'jbuilder', '2.8.0'
+# gem 'jbuilder', '2.8.0'
 
 # Use Webpacker
-gem 'webpacker', '4.0.2'
+gem 'webpacker', '4.0.7'
 
 # Bootstrap Form Helpers
 gem 'bootstrap-sass', '3.4.1'
