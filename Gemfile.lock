@@ -77,9 +77,10 @@ GEM
       execjs
     coffee-script-source (1.12.2)
     concurrent-ruby (1.1.5)
-    crass (1.0.4)
+    crass (1.0.5)
     erubi (1.8.0)
     execjs (2.7.0)
+    ffi (1.10.0)
     ffi (1.10.0-x64-mingw32)
     globalid (0.4.2)
       activesupport (>= 4.2.0)
@@ -87,7 +88,7 @@ GEM
     i18n (1.6.0)
       concurrent-ruby (~> 1.0)
     json (1.8.6)
-    loofah (2.2.3)
+    loofah (2.3.1)
       crass (~> 1.0.2)
       nokogiri (>= 1.5.9)
     mail (2.7.1)
@@ -99,8 +100,11 @@ GEM
     mini_mime (1.0.1)
     mini_portile2 (2.3.0)
     minitest (5.11.3)
+    msgpack (1.2.9)
     msgpack (1.2.9-x64-mingw32)
     nio4r (2.3.1)
+    nokogiri (1.8.5)
+      mini_portile2 (~> 2.3.0)
     nokogiri (1.8.5-x64-mingw32)
       mini_portile2 (~> 2.3.0)
     pdf-reader (2.1.0)
@@ -109,6 +113,7 @@ GEM
       hashery (~> 2.0)
       ruby-rc4
       ttfunk
+    pg (1.1.4)
     pg (1.1.4-x64-mingw32)
     public_suffix (3.0.3)
     rack (2.0.7)
@@ -184,6 +189,7 @@ GEM
     websocket-extensions (0.1.3)
 
 PLATFORMS
+  ruby
   x64-mingw32
 
 DEPENDENCIES
