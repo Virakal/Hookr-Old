@@ -1,0 +1,11 @@
+version: '3.7'
+
+services:
+  web:
+    build:
+      context: ..
+      # Location is relative to folder containing this compose file
+      dockerfile: .devcontainer/Dockerfile
+    volumes:
+      - ..:/workspace
+    command: sleep infinity
