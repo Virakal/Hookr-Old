@@ -8,6 +8,6 @@
     "jquery-ujs": "^1.2.2"
   },
   "devDependencies": {
-    "webpack-dev-server": "^3.7.0"
+    "webpack-dev-server": "^5.0.0"
   }
 }
