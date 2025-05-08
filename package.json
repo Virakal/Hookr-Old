@@ -3,7 +3,7 @@
   "dependencies": {
     "@rails/webpacker": "^4.0.7",
     "coffee-loader": "^0.9.0",
-    "coffeescript": "1.12.7",
+    "coffeescript": "2.7.0",
     "jquery": "^3.5.0",
     "jquery-ujs": "^1.2.2"
   },
