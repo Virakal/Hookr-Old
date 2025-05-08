@@ -27,7 +27,7 @@ gem 'turbolinks', '5.2.0'
 # gem 'jbuilder', '2.8.0'
 
 # Use Webpacker
-gem 'webpacker', '4.0.7'
+gem 'webpacker', '4.3.0'
 
 # Bootstrap Form Helpers
 gem 'bootstrap-sass', '3.4.1'
