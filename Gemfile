@@ -9,7 +9,7 @@ gem 'rails', '5.2.3'
 gem 'bootsnap', '1.3.2'
 
 # Use SCSS for stylesheets
-gem 'sassc-rails', '2.1.1'
+gem 'sassc-rails', '2.1.2'
 
 # Use Uglifier as compressor for JavaScript assets
 gem 'uglifier', '4.1.20'
