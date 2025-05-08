@@ -49,7 +49,7 @@ gem 'bootstrap_form', '2.7.0', git: 'https://github.com/bootstrap-ruby/rails-boo
 gem 'tzinfo-data', platforms: [:mingw, :mswin, :x64_mingw]
 
 gem 'addressable', '2.5.2'
-gem 'pdf-reader', '2.1.0'
+gem 'pdf-reader', '2.14.1'
 gem 'nokogiri', '1.11.4'
 
 group :production do
