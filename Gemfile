@@ -48,7 +48,7 @@ gem 'bootstrap_form', '2.7.0', git: 'https://github.com/bootstrap-ruby/rails-boo
 # Windows does not include zoneinfo files, so bundle the tzinfo-data gem
 gem 'tzinfo-data', platforms: [:mingw, :mswin, :x64_mingw]
 
-gem 'addressable', '2.5.2'
+gem 'addressable', '2.8.0'
 gem 'pdf-reader', '2.1.0'
 gem 'nokogiri', '1.11.4'
 
