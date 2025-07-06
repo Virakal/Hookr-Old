@@ -6,7 +6,7 @@ ruby '2.5.5'
 gem 'rails', '5.2.3'
 
 # Rails seems to want this?
-gem 'bootsnap', '1.3.2'
+gem 'bootsnap', '1.18.6'
 
 # Use SCSS for stylesheets
 gem 'sassc-rails', '2.1.1'
