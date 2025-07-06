@@ -59,7 +59,7 @@ end
 
 # bundle exec rake doc:rails generates the API under doc/api.
 group :doc do
-	gem 'sdoc', '0.4.2'
+	gem 'sdoc', '2.6.1'
 end
 
 group :development, :test do
