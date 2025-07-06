@@ -31,7 +31,7 @@ gem 'webpacker', '4.0.7'
 
 # Bootstrap Form Helpers
 gem 'bootstrap-sass', '3.4.1'
-gem 'bootstrap_form', '2.7.0', git: 'https://github.com/bootstrap-ruby/rails-bootstrap-forms', tag: 'v2.7.0'
+gem 'bootstrap_form', '2.7.0', git: 'https://github.com/bootstrap-ruby/rails-bootstrap-forms', tag: 'v5.4.0'
 
 # Use ActiveModel has_secure_password
 # gem 'bcrypt', '~> 3.1.7'
