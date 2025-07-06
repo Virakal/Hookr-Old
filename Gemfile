@@ -50,7 +50,7 @@ gem 'tzinfo-data', platforms: [:mingw, :mswin, :x64_mingw]
 
 gem 'addressable', '2.5.2'
 gem 'pdf-reader', '2.1.0'
-gem 'nokogiri', '1.11.4'
+gem 'nokogiri', '1.14.3'
 
 group :production do
 	# Use postgres as the database for Active Record
